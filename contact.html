@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale-1.0">
+  <title>K-Snacks | Butik</title>
+  <link rel="stylesheet" href="css/style.css">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+<body>
+
+<div class="header">
+  <div class="container" id="topcontainer">
+  <div class="navbar">
+    <div class="logo">
+      <a href="index.html">
+      <img src="icons/ksnacks-icon.png" alt="ksnacks-logo" width="120">
+    </a>
+    </div>
+    <nav>
+      <ul id="menulist">
+        <li><a href="index.html"> Hem </a></li>
+        <li><a href="productspage.html">Produkter </a></li>
+        <li><a href="about.html"> Om oss </a></li>
+        <li><a href=""> Kontakta oss </a></li>
+      </ul>
+    </nav>
+    <a href="carts.html" class="cart-link">
+      <img src="icons/shoppingbasket.png" class="carticon" alt="cart" width="30" height="30">
+    </a> 
+  <img src="icons/menu-icon.png" class="menu-icon" alt="menu-icon" onclick="showmMenu();">
+  </div>
+  </div>
+</div>
+
+<!--implementation av kontaktform med fält för diverse uppgifter, post metod dock mer statiskt ingen funktionalitet än-->
+  <div id="page" class="container contactform">
+    <div class="containerform">
+        <form id="contact" action="/...php" method="post">
+          <h3>Kontakta oss</h3>
+          <h4>Fyll i för att lämna synpunkter eller om du behöver hjälp!</h4>
+          <fieldset>
+            <input placeholder="Namn" type="text" tabindex="1" required autofocus>
+          </fieldset>
+          <fieldset>
+            <input placeholder="Email" type="email" tabindex="2" required>
+          </fieldset>
+          <fieldset>
+            <input placeholder="Telefon" type="tel" tabindex="3" required>
+          </fieldset>
+          <fieldset>
+            <input placeholder="Ämne" type="url" tabindex="4" required>
+          </fieldset>
+          <fieldset>
+            <textarea placeholder="Meddelande...." tabindex="5" required></textarea>
+          </fieldset>
+          <fieldset>
+            <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+          </fieldset>
+        </form>
+      </div>
+
+</div>
+
+<!-- Footer , för diverse länkar och logotyp-->
+<div class="footer">
+  <div class="container">
+    <div class="container-row">
+      <div class="footer-bot1">
+        <h3>Gratis frakt & snabb leverans</h3>
+        <div class="logobot">
+          <img src="icons/bag256.png" alt="bagicon">
+          <img src="icons/shipment.png" alt="shipicon">
+        </div>
+      </div>
+      <div class="footer-bot2">
+        <a href="index.html">
+        <img src="icons/ksnacks-icon.png" alt="ksnacks-logo">
+      </a>
+      </div>
+      <!--
+      <div class="footer-bot3">
+        <h3>Länkarp</h3>
+        <ul>
+          <li>länk</li>
+          <li>länk</li>
+        </ul>
+      </div>
+      -->
+      <div class="footer-bot4">
+        <h3>Följ oss</h3>
+        <ul>
+          <li><a href="https://www.twitter.com">Twitter</a></li>
+          <li><a href="https://www.facebook.com">Facebook</a></li>
+          <li><a href="https://www.instagram.com">Instagram</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+  <!-- script för menu i samband med mindre skärmar -->
+  <script src="scripts/script.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale-1.0">
+    <title>K-Snacks | Butik</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+
+<body>
+<!-- initial språkväljare-- endast implementerad på index för att visa hur det kan se ut> -->
+<div class="header">
+<div class="container"> 
+  <!--Menu-->
+<div class="navbar">
+  <div class="logo">
+    <a href="index.html">
+    <img src="icons/ksnacks-icon.png" alt="ksnacks-logo" width="120">
+  </a>
+  </div>
+  <nav>
+    <ul id="menulist">
+      <li><a href=""> Hem </a></li>
+      <li><a href="productspage.html"> Produkter </a></li>
+      <li><a href="about.html"> Om oss </a></li>
+      <li><a href="contact.html"> Kontakta oss </a></li>
+    </ul>
+  </nav>
+  <!--implementation av varukorg ikon-->
+  <div class="cart-link">
+  <a href="carts.html" >
+    <img src="icons/shoppingbasket.png" class="carticon" alt="cart" width="30" height="30">
+    <!-- implementation av symbol för antalet produkter i varukorgen finns på carts.html (exempel)-->
+    <!--<div class="txt">4</div> -->
+  </a>
+</div>
+<div class="lang-menu">
+  <div class="selected-lang">
+  </div>
+  <ul>
+      <li>
+          <a href="" class="en">English</a>
+      </li>
+  </ul>
+</div>
+<!--menu ikon som syns i samband med att upplösningen blir mindre än 800px för enheter med mindre skärmar-->
+  <img src="icons/menu-icon.png" class="menu-icon" alt="menu-icon" onclick="showmMenu();">
+</div>
+
+<!--container för frontpage med välkomstskärm samt en bild och knapp för ta sig till produkterna-->
+<div class="container-row">  <!--row-->
+  <div class="col2">
+    <h1> Välkommen till <br> K-Snacks! </h1>
+    <p> Hos oss hittar du ett stort utbud av asiatisk snacks</p>
+    <a href="productspage.html" class="btn"> Handla &#10149;</a>
+  </div>
+  <div class="col2">
+<img src="images/food-aisle.jpg" alt="chips-aisle">
+  </div>
+</div>
+
+</div>
+
+</div>
+
+<!-- Kategorier , bild av diverse produkt kategorier som erbjuds-->
+
+<div class="categories">
+  <div class="small-container">
+    <div class="container-row">
+      <div class="col3">
+        <img src="images/chips-potatoes.jpg" alt="chips-potatoes">
+      </div>
+      <div class="col3">
+        <img src="images/candy.jpg" alt="candy">
+      </div>
+      <div class="col3">
+        <img src="images/drinks.jpg" alt="sodas"> 
+      </div>
+    </div>
+  </div>
+</div>
+
+<!---->
+<!-- Bästsäljare , implemention av betyg för diverse bästsäljare samt lite effekter vid samband med muspekaren läggs över produkterna-->
+<div class="small-container">
+  <h2 class="title">Bästsäljare</h2>
+  <div class="container-row">
+    <div class="col4">
+        <!--vid tryck på produktkort skickas till en mer detaljerad produktsida-->
+        <a href="productdetail.html">
+          <img src="images/chips1.jpg" alt="chips">
+        </a>
+      <h4>Chips</h4>
+      <div class="betyg">
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star-o"></i>
+      </div>
+      <p>15:-</p>
+      <div class='btn-cart'>Lägg i varukorg</div>
+    </div>
+    <div class="col4">
+      <a href="productdetail.html">
+      <img src="images/chips2.jpg" alt="chips-potatoes">
+      </a>
+      <h4>Chips</h4>
+      <div class="betyg">
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+      </div>
+      <p>14:-</p>
+      <div class='btn-cart'>Lägg i varukorg</div>
+    </div>
+    <div class="col4">
+      <a href="productdetail.html">
+      <img src="images/chips4.jpg" alt="chips-potatoes">
+    </a>
+      <h4>Chips</h4>
+      <div class="betyg">
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star-o"></i>
+      </div>
+      <p>13:-</p>
+      <div class='btn-cart'>Lägg i varukorg</div>
+    </div>
+    <div class="col4">
+      <a href="productdetail.html">
+      <img src="images/pockycp.jpg" alt="candy">
+    </a>
+      <h4>Chips</h4>
+      <div class="betyg">
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+      </div>
+      <p>11:-</p>
+      <div class='btn-cart'>Lägg i varukorg</div>
+    </div>
+  </div>
+
+</div>
+
+<!-- Footer , för diverse länkar och logotyp-->
+<div class="footer">
+  <div class="container">
+    <div class="container-row">
+      <div class="footer-bot1">
+        <h3>Gratis frakt & snabb leverans</h3>
+        <div class="logobot">
+          <img src="icons/bag256.png" alt="bagicon">
+          <img src="icons/shipment.png" alt="shipicon">
+        </div>
+      </div>
+      <div class="footer-bot2">
+        <a href="index.html">
+        <img src="icons/ksnacks-icon.png" alt="ksnacks-logo">
+      </a>
+      </div>
+      <!--
+      <div class="footer-bot3">
+        <h3>Länkarp</h3>
+        <ul>
+          <li>länk</li>
+          <li>länk</li>
+        </ul>
+      </div>
+      -->
+      <div class="footer-bot4">
+        <h3>Följ oss</h3>
+        <ul>
+          <li><a href="https://www.twitter.com">Twitter</a></li>
+          <li><a href="https://www.facebook.com">Facebook</a></li>
+          <li><a href="https://www.instagram.com">Instagram</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="scripts/script.js"></script>
+
+  </body>
+</html>

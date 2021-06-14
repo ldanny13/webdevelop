@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale-1.0">
+    <title>K-Snacks | Butik</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/products.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.2.4/css/simple-line-icons.min.css'><link rel="stylesheet" href="./style.css">
+  </head>
+
+  <body>
+<div class="header">
+<div class="container">
+<div class="navbar">
+  <div class="logo">
+    <a href="index.html">
+    <img src="icons/ksnacks-icon.png" alt="ksnacks-logo" width="120">
+  </a>
+  </div>
+  <nav>
+    <ul id="menulist">
+      <li><a href="index.html"> Hem </a></li>
+      <li><a href=""> Produkter </a></li>
+      <li><a href="about.html"> Om oss </a></li>
+      <li><a href="contact.html"> Kontakta oss </a></li>
+    </ul>
+  </nav>
+  <div class="cart-link">
+    <a href="carts.html" >
+      <img src="icons/shoppingbasket.png" class="carticon" alt="cart" width="30" height="30">
+      <!--<div class="txt">4</div> -->
+    </a>
+  </div>  <img src="icons/menu-icon.png" class="menu-icon" alt="menu-icon" onclick="showmMenu();">
+</div>
+
+</div>
+
+</div>
+
+<!--menu för sortera (fungerar ej)-->
+
+<div class="small-container">
+  <div class="container-row productpage">
+    <h2>Våra produkter</h2>
+    <select class="select-css" name="Sorting">
+      <option value="">Sortera</option>
+      <option value="">Pris</option>
+      <option value="">Populäritet</option>
+      <option value="">Betyg</option>
+      <option value="">Försäljning</option>
+    </select>
+
+<!--produkter, bild, knappar och betyg samt pris -->
+  </div>
+    <div class="container-row">
+      <div class="col4">
+        <!--vid tryck på produktkort skickas till en mer detaljerad produktsida-->
+        <a href="productdetail.html">
+          <img src="images/chips1.jpg" alt="chips">
+        </a>
+        <h4>Krioepoek - Sweet Chilli</h4>
+        <div class="betyg">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star-o"></i>
+        </div>
+        <p class="price">12:-</p>
+        <div class='btn-cart'>Lägg i varukorg</div>
+      </div>
+
+      <div class="col4">
+        <a href="productdetail.html">
+        <img src="images/purple_chips.jpg" alt="chips">
+      </a>
+        <h4>Go Tan - Krupuk</h4>
+        <div class="betyg">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star-o"></i>
+        </div>
+        <p>12:-</p>
+        <div class='btn-cart'>Lägg i varukorg</div>
+      </div>
+      <div class="col4">
+        <a href="productdetail.html">
+        <img src="images/chips4.jpg" alt="">
+      </a>
+        <h4>Chips de Banenes</h4>
+        <div class="betyg">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+        </div>
+        <p>12:-</p>
+        <div class='btn-cart'>Lägg i varukorg</div>
+      </div>
+      <div class="col4">
+        <a href="productdetail.html">
+        <img src="images/chilli_chips.jpg" alt="chips">
+      </a>
+        <h4>Chipsy Chilli</h4>
+        <div class="betyg">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star-o"></i>
+        </div>
+        <p>12:-</p>
+        <div class='btn-cart'>Lägg i varukorg</div>
+      </div>
+      <div class="col4">
+        <img src="images/greenchips.jpg" alt="chips">
+        <h4>Go Tan - Lime & Onion</h4>
+        <div class="betyg">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star-o"></i>
+        </div>
+        <p>12:-</p>
+        <div class='btn-cart'>Lägg i varukorg</div>
+      </div>
+      <div class="col4">
+        <img src="images/yellow_chips.jpg" alt="chips">
+        <h4>Go Tan - Yellow Curry</h4>
+        <div class="betyg">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star-o"></i>
+        </div>
+        <p>12:-</p>
+        <div class='btn-cart'>Lägg i varukorg</div>
+      </div>
+      <div class="col4">
+        <img src="images/pockycp.jpg" alt="chips">
+        <h4>Chips</h4>
+        <div class="betyg">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star-o"></i>
+        </div>
+        <p>12:-</p>
+        <div class='btn-cart'>Lägg i varukorg</div>
+      </div>
+
+      <div class="col4">
+        <img src="images/chips1.jpg" alt="chips">
+        <h4>Chips</h4>
+        <div class="betyg">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star-o"></i>
+        </div>
+        <p>12:-</p>
+        <div class='btn-cart'>Lägg i varukorg</div>
+      </div>
+
+    </div>
+
+<!-- sidbyte-->
+<div class="pages">
+  <span>1</span>
+  <span>2</span>
+  <span>3</span>
+  <span>4</span>
+  <span>5</span>
+  <span>&#10140;</span>
+
+  </div>
+
+</div>
+
+<!-- Footer , för diverse länkar och logotyp-->
+<div class="footer">
+  <div class="container">
+    <div class="container-row">
+      <div class="footer-bot1">
+        <h3>Gratis frakt & snabb leverans</h3>
+        <div class="logobot">
+          <img src="icons/bag256.png" alt="bagicon">
+          <img src="icons/shipment.png" alt="shipicon">
+        </div>
+      </div>
+      <div class="footer-bot2">
+        <a href="index.html">
+        <img src="icons/ksnacks-icon.png" alt="ksnacks-logo">
+      </a>
+      </div>
+      <!--
+      <div class="footer-bot3">
+        <h3>Länkarp</h3>
+        <ul>
+          <li>länk</li>
+          <li>länk</li>
+        </ul>
+      </div>
+      -->
+      <div class="footer-bot4">
+        <h3>Följ oss</h3>
+        <ul>
+          <li><a href="https://www.twitter.com">Twitter</a></li>
+          <li><a href="https://www.facebook.com">Facebook</a></li>
+          <li><a href="https://www.instagram.com">Instagram</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="scripts/script.js"></script>
+
+  </body>
+</html>
